@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="userLoginIntoApplication">
+        <parameter name="browser-Name" value="chrome"></parameter>
+        <parameter name="username" value="sukanyakumari19@gmail.com"></parameter>
+        <parameter name="password" value="Suk@ny@19"></parameter>
+        <classes>
+            <class name="MagnetCommerceGridCode.MagnetCommerceGrid">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="userLoginIntoApplication"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="selectItemAndVerifyCartIsEmpty">
+        <parameter name="browser-Name" value="chrome"></parameter>
+        <parameter name="username" value="sukanyakumari19@gmail.com"></parameter>
+        <parameter name="password" value="Suk@ny@19"></parameter>
+        <classes>
+            <class name="MagnetCommerceGridCode.MagnetCommerceGrid">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="selectItemAndVerifyCartIsEmpty"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="verifyWishListItem">
+        <parameter name="browser-Name" value="chrome"></parameter>
+        <parameter name="username" value="sukanyakumari19@gmail.com"></parameter>
+        <parameter name="password" value="Suk@ny@19"></parameter>
+        <classes>
+            <class name="MagnetCommerceGridCode.MagnetCommerceGrid">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="verifyWishListItem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

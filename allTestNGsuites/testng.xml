@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="MagnetoCommerceTest">
+        <parameter name="Browser" value=""></parameter>
+        <classes>
+            <class name="com.MagnetoCommerce.MagnetCommereceTestClass.MagnetoCommerceTestPage">
+                <methods>
+                    <include name="userLoginIntoApplication"/>
+                    <include name="selectItemAndVerifyCartIsEmpty"/>
+                    <include name="VerifyWishListItem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
